@@ -1,0 +1,9 @@
+# Override GitHub language detection
+*.kt linguist-language=Kotlin
+*.kt linguist-detectable=true
+
+# Sembunyikan file-file ini dari statistik
+*.xml linguist-detectable=false
+*.gradle linguist-detectable=false
+gradlew linguist-detectable=false
+gradlew.bat linguist-detectable=false
