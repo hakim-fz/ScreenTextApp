@@ -1,9 +1,0 @@
-*.kt linguist-language=Kotlin
-*.xml linguist-language=XML
-*.gradle linguist-language=Groovy
-
-# Abaikan file-file ini dari statistik bahasa
-*.xml linguist-detectable=false
-gradlew linguist-detectable=false
-gradlew.bat linguist-detectable=false
-gradle/** linguist-detectable=false
