@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+drawable circle_avatar
+drawable ic_back
+id action_logout
+id action_profil
+id btnLogin
+id btnLogout
+id btnMulai
+id etPassword
+id etUsername
+id fabMenu
+id toolbar
+id tvNamaUser
+id tvStatus
+id tvUsername
+layout activity_home
+layout activity_login
+layout activity_profil
+menu menu_home
+string app_name
+style Theme.ScreenTextApp

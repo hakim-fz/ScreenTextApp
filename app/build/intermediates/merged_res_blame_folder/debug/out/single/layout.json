@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.screentextapp-mergeDebugResources-30:/layout/activity_home.xml",
+        "source": "com.example.screentextapp-main-33:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-mergeDebugResources-30:/layout/activity_login.xml",
+        "source": "com.example.screentextapp-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-mergeDebugResources-30:/layout/activity_profil.xml",
+        "source": "com.example.screentextapp-main-33:/layout/activity_profil.xml"
+    }
+]

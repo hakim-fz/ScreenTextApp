@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/menu_menu_home.xml.flat",
+        "source": "com.example.screentextapp-main-33:/menu/menu_home.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/layout_activity_home.xml.flat",
+        "source": "com.example.screentextapp-main-33:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/layout_activity_profil.xml.flat",
+        "source": "com.example.screentextapp-main-33:/layout/activity_profil.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "com.example.screentextapp-main-33:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/drawable_ic_back.xml.flat",
+        "source": "com.example.screentextapp-main-33:/drawable/ic_back.xml"
+    },
+    {
+        "merged": "com.example.screentextapp-merged_res-31:/drawable_circle_avatar.xml.flat",
+        "source": "com.example.screentextapp-main-33:/drawable/circle_avatar.xml"
+    }
+]
