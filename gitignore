@@ -1,0 +1,12 @@
+# Build artifacts
+/build
+/app/build
+/.gradle
+/gradle/wrapper/gradle-wrapper.jar
+
+# Local config
+local.properties
+*.iml
+.idea/
+.DS_Store
+captures/

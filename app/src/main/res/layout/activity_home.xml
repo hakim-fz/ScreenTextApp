@@ -15,7 +15,8 @@
             android:layout_height="?attr/actionBarSize"
             android:background="#1976D2"
             app:title="ScreenText"
-            app:titleTextColor="#FFFFFF"/>
+            app:titleTextColor="#FFFFFF"
+            app:subtitleTextColor="#B3E5FC"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
@@ -29,8 +30,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang!"
-            android:textSize="24sp"
+            android:text="Layanan ScreenText"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#1976D2"
             android:layout_marginBottom="8dp"/>
@@ -38,21 +39,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tekan tombol di bawah untuk mengaktifkan\nlayanan ScreenText di latar belakang"
-            android:textSize="14sp"
+            android:text="Tekan tombol untuk mengaktifkan\nlayanan di latar belakang"
+            android:textSize="13sp"
             android:textColor="#757575"
             android:gravity="center"
-            android:layout_marginBottom="40dp"/>
+            android:layout_marginBottom="36dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMulai"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
             android:text="MULAI"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#FFFFFF"
-            app:cornerRadius="100dp"
+            app:cornerRadius="90dp"
             android:backgroundTint="#1976D2"
             app:elevation="8dp"/>
 
@@ -61,9 +62,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="● Tidak Aktif"
-            android:textSize="14sp"
+            android:textSize="13sp"
             android:textColor="#F44336"
-            android:layout_marginTop="24dp"/>
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekan lama tombol untuk petunjuk"
+            android:textSize="11sp"
+            android:textColor="#BDBDBD"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Tombol fitur Scan Teks -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnScanTeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍  Scan Teks dari Gambar"
+            android:textSize="14sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:backgroundTint="#388E3C"
+            app:cornerRadius="24dp"
+            app:elevation="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambil teks dari foto atau gambar"
+            android:textSize="11sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginTop="6dp"/>
 
     </LinearLayout>
 
@@ -76,7 +114,6 @@
         android:src="@android:drawable/ic_input_add"
         android:contentDescription="Menu"
         app:backgroundTint="#1976D2"
-        app:tint="#FFFFFF"
-        app:fabSize="normal"/>
+        app:tint="#FFFFFF"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -26,6 +26,7 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <!-- Avatar + nama -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,10 +34,14 @@
                 android:gravity="center"
                 android:layout_marginBottom="24dp">
 
+                <!-- SLIDE 9: viewAvatar bisa di-longClick -->
                 <View
+                    android:id="@+id/viewAvatar"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/circle_avatar"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:layout_marginBottom="12dp"/>
 
                 <TextView
@@ -56,6 +61,7 @@
                     android:textColor="#757575"/>
             </LinearLayout>
 
+            <!-- Card info akun -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,24 +84,46 @@
                         android:textColor="#1976D2"
                         android:layout_marginBottom="16dp"/>
 
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Username" android:textColor="#757575"/>
-                        <TextView android:id="@+id/tvUsername" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="user" android:textColor="#212121" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="12dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Username" android:textColor="#757575"/>
+                        <TextView android:id="@+id/tvUsername" android:layout_width="0dp"
+                            android:layout_height="wrap_content" android:layout_weight="1"
+                            android:text="user" android:textColor="#212121" android:textStyle="bold"/>
                     </LinearLayout>
 
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="12dp">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Status" android:textColor="#757575"/>
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="✓ Aktif" android:textColor="#388E3C" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:layout_marginBottom="12dp">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Status" android:textColor="#757575"/>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="✓ Aktif"
+                            android:textColor="#388E3C" android:textStyle="bold"/>
                     </LinearLayout>
 
-                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Versi App" android:textColor="#757575"/>
-                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="1.0.0" android:textColor="#212121"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Versi App" android:textColor="#757575"/>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="2.0.0" android:textColor="#212121"/>
                     </LinearLayout>
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Tombol Edit -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="EDIT PROFIL"
+                app:cornerRadius="28dp"
+                android:backgroundTint="#1976D2"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Tombol Keluar -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogout"
                 android:layout_width="match_parent"

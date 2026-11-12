@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.screentextapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <!-- Izin untuk foreground service tipe mediaProjection (Android 14+) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
 
     <application
         android:allowBackup="true"
@@ -20,13 +27,29 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"/>
+        <activity android:name=".HomeActivity" android:exported="false"/>
+        <activity android:name=".ProfilActivity" android:exported="false"/>
+        <activity android:name=".ScanActivity" android:exported="false"/>
 
+        <!-- Aktifitas transparan untuk meminta izin MediaProjection -->
         <activity
-            android:name=".ProfilActivity"
-            android:exported="false"/>
+            android:name=".CapturePermissionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Transparent"
+            android:excludeFromRecents="true"/>
+
+        <!-- Aktifitas fullscreen untuk crop selection atas screenshot -->
+        <activity
+            android:name=".CropSelectionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenTextApp.FullScreenCapture"
+            android:excludeFromRecents="true"/>
+
+        <!-- Layanan overlay latar belakang dengan MediaProjection -->
+        <service
+            android:name=".FloatingOverlayService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection"/>
 
     </application>
 </manifest>

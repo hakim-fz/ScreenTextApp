@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tombol floating untuk layanan scan layar latar belakang -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- FAB utama: ketuk untuk mulai scan, seret untuk memindahkan posisi -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFloating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_camera"
+        android:contentDescription="Scan teks layar"
+        android:backgroundTint="#1976D2"
+        android:tint="#FFFFFF"
+        android:elevation="8dp"/>
+
+    <!-- Label kecil di bawah FAB -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

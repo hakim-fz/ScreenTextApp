@@ -1,17 +1,12 @@
-# Build output
-build/
-app/build/
-.gradle/
+# Build artifacts
+/build
+/app/build
+/.gradle
+/gradle/wrapper/gradle-wrapper.jar
 
-# Android Studio
-.idea/
-*.iml
+# Local config
 local.properties
+*.iml
+.idea/
 .DS_Store
-
-# Gradle cache
-gradle/wrapper/gradle-wrapper.jar
-
-# Keystore
-*.jks
-*.keystore
+captures/
